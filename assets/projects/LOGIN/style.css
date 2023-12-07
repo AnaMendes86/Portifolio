@@ -1,0 +1,137 @@
+  @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Young Serif', serif;
+    color: #323232;
+    border: none;
+}
+
+body {
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20191215/pngtree-modern-double-colors-neon-lights-on-brick-background-image_324803.jpg');
+
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+input:focus {
+    outline: none;  
+    border-color: #1E10D7;    
+}
+
+a {
+    color: #1E10D7;    
+    font-size: .8rem;
+}
+
+a:hover {
+    color: #F64CCD; 
+}
+
+
+/* CONTAINER LOGIN */
+
+#login-container {
+    background: #fff;
+    width: 25rem;
+    padding: 1.25rem;
+    border-radius: .625rem;
+    text-align: center;
+}
+
+
+/* FORM */
+
+form {
+    margin: 2.5rem 0;
+}
+
+label,
+input {
+    display: block;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: .125rem solid #323232;
+    padding: .625rem;
+    font-size: 1rem;
+    width: 98%;
+    margin-bottom: 1.25rem;
+}
+
+#forgot-pass {
+    display: block;
+    text-align: right;
+}
+
+input[type="submit"] {
+    background: linear-gradient(to right, #F64CCD, #1E10D7);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.25rem;
+    margin-top: 1.6rem;
+    cursor: pointer;   
+    transition: background 0.10s;
+}
+
+input[type="submit"]:hover {    
+    background: linear-gradient(to left, #F64CCD, #1E10D7);
+}
+
+#social-container,
+#social-container p {
+    margin-bottom: 1.25rem;
+}
+#social-container i {   
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    margin: 0 .3rem;
+    color:#fff;
+    font-size: 1.4rem;
+}
+
+.fa-facebook-f {
+    background: #1e7cf2;
+}
+
+.fa-linkedin {
+    background: #306cb3;
+}
+
+.fa-whatsapp {
+    background: linear-gradient(to bottom, #08fe6c, #08d527);
+}
+
+.fa-twitter {
+    background: #00A7E5;
+}
+.fa-youtube {
+    background-color: #F60000;
+}
+
+#register-container p {
+    margin-bottom: .6rem;    
+}
+
+@media (max-width:500px) {
+    #login-container {
+        
+        width: 20rem;        
+    }
+    
+}

@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Happy Dance;
+    src: url(/fonts/Happy-Dance.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    
+    background: url('../images/espectro-colorido-arco-íris-com-cores-números.png') no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    position: absolute;
+    top: 2%;
+    text-shadow:2px 2px #000, -2px -2px #000;
+    font-family: Happy Dance;
+}
+
+.calculadora {
+    background: linear-gradient(120deg, #01AEF4, #E200F5, #EBED00);
+    border-radius: 10px;
+    padding: 2%;
+    border: 1px solid #000;   
+    margin-top: 15%;
+    
+}
+
+#resultado {
+    background: #fff;
+    margin: 4% auto;
+    font-size: 1.5rem;
+    color: #000;
+    text-align: right;
+    padding: 2%;
+    overflow: hidden;
+    border: 1px solid #000; 
+    height: 2.2rem;
+    width: 13.7rem;
+    position: relative;
+    
+}
+
+button {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0.2rem;
+    background: #a7a1a1;   
+}
+
+button:hover {
+    background: #05f8ecb7;
+}
+
+#zero{
+    width: 6.8125rem;
+}
+
+#igual{
+    height: 6.8125rem;
+}
+
+footer p {
+    text-shadow:2px 2px #000, -2px -2px #000;
+    font-family: Happy Dance; 
+    color: #fff;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;  
+}
+
+i{
+    position: absolute;
+    color: #000;
+    font-size: 1.5rem;
+    z-index: 1;
+    top: 29.5%;
+    left: 53%;
+
+
+}
+
+.hidden{
+    
+   opacity: 0;
+    }
+
+@media (max-width:768px) {
+    .calculadora {
+        width: 20rem;
+        /* height: 70vh; */
+    }
+
+    #resultado {
+    
+        height:8%;
+        width: 18rem;
+        /* font-size: 2rem; */
+        
+        
+    }
+
+    button {
+        width: 4rem;
+        height: 4rem;
+        /* font-size: 2rem; */
+     
+        margin: 0.2rem;
+           
+    }
+
+    table{
+       
+     
+        margin: auto;
+    }
+
+    #zero{
+        width:8.5rem;
+    }
+    
+    #igual{
+        height: 8.5rem;
+    }
+}
+
+
+
